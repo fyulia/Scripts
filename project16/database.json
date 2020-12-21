@@ -1,0 +1,94 @@
+{
+  "workers": [
+    {
+      "name": "Иван",
+      "surname": "Иванов",
+      "patr": "Иваныч",
+      "birthday": "1995-05-05",
+      "email": "worker@mail.ru",
+      "number": "+7(800) 555-3535",
+      "department": 0,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Петр",
+      "surname": "Петров",
+      "patr": "Абрамович",
+      "department": 1,
+      "number": "+7(800) 555-3535",
+      "email": "worker@mail.ru",
+      "birthday": "1995-05-05"
+    },
+    {
+      "id": 3,
+      "name": "Сидор",
+      "surname": "Сидоров",
+      "patr": "Абрамович",
+      "department": 2,
+      "number": "+7(800) 555-3535",
+      "email": "worker@mail.ru",
+      "birthday": "1995-05-05"
+    },
+    {
+      "name": "Вася",
+      "surname": "Пупкин",
+      "patr": "Петрович",
+      "department": 0,
+      "number": "+7(999) 999-7733",
+      "id": 5,
+      "email": "worker@mail.ru",
+      "birthday": "1995-05-05"
+    },
+    {
+      "name": "Джек",
+      "surname": "Воробей",
+      "patr": "Игнатьевич",
+      "birthday": "2000-06-20",
+      "email": "jack@mail.ru",
+      "number": "+7(123) 456-7890",
+      "department": 3,
+      "id": 6
+    },
+    {
+      "name": "Александр",
+      "surname": "Пушкин",
+      "patr": "Сергеевич",
+      "birthday": "2020-01-01",
+      "email": "p@ya.ru",
+      "number": "+7(987) 654-3412",
+      "department": 0,
+      "id": 7
+    },
+    {
+      "name": "Владимир",
+      "surname": "Путин",
+      "patr": "Владимирович",
+      "birthday": "2222-03-21",
+      "email": "13132@fds.com",
+      "number": "+7(311) 323-1133",
+      "department": 0,
+      "id": 8
+    },
+    {
+      "name": "Клим",
+      "surname": "Климов",
+      "patr": "Климович",
+      "birthday": "1998-06-10",
+      "email": "klim@mail.ru",
+      "number": "+7(567) 899-8922",
+      "department": 1,
+      "id": 9
+    },
+    {
+      "name": "Евгений",
+      "surname": "Евгеньев",
+      "patr": "Евгеньевич",
+      "birthday": "1990-04-13",
+      "email": "evg123@nail.ru",
+      "number": "+7(979) 687-5436",
+      "department": 1,
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<input type="text" class="form-control" placeholder="Название" id="_name" #_name>
+<select class="custom-select" id="_color" #_color>
+  <option value="green">Включен</option>
+  <option value="red">Выключен</option>
+
+</select>
+<button class="btn btn-danger" (click)="addDetect(_name.value,_color.value)">Добавить карточку</button>
+
+
+
+
+<div class="container" style="width:350px">
+  <div class="row">
+    <div class="detector" style="text-align: center; color: black;" *ngFor="let detectors of detectors"
+      [style.background-color]="detectors.color">
+      <div class="detector-body">
+        <h5 class="detector-title">{{ detectors.newId }}</h5>
+        <p class="detector-text">{{ detectors.name }}</p>
+        <a href="#" class="btn btn-danger" (click)="deleteDetect(detectors.newId)">
+          УДАЛИТЬ
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

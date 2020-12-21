@@ -1,0 +1,122 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Hello world</h1>
+    </div>
+  </div>
+</div> -->
+
+<!-- интерполяция -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ title }}</h1>
+      <h1>10 + 20 = {{10+20}}</h1>
+      <h1>Число: {{myNumber}}</h1>
+      <h1>{{hello()}}</h1>
+      <h1>Флаг {{flag === true ? 'вкл' : 'выкл'}}</h1>
+      <h1>{{title.toUpperCase()}}</h1>
+    </div>
+  </div>
+</div>
+<hr> -->
+<!-- привязка свойств  -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-primary" [disabled]="!buttonEnabled">
+        Кнопка</button>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- привязка событий  -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="myblock" (mousemove)="getCoords($event)"></div>
+      <p>X: {{blockX}} Y: {{blockY}}</p>
+    </div>
+  </div>
+</div>
+<hr> -->
+
+<!-- привязка в оба направления  -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]= "inputValue" />
+      </div>
+      <p>{{inputValue}}</p>
+    </div>
+  </div>
+</div>
+<hr> -->
+
+<!-- локальная референция -->
+<!-- viewchild -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <input type="text" class="form-control" #someInput />
+      </div>
+      <button class="btn btn-primary" (click) = "getData(someInput)">Кнопка</button>
+    </div>
+  </div>
+</div>
+<hr> -->
+
+<!-- условный оператор -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p *ngIf="flag === true">Флаг включен</p>
+      <p *ngIf="flag === false">Флаг выключен</p>
+
+      <ng-container *ngIf="flag === true; else elseTemplate">
+        <p>Флаг включен</p>
+      </ng-container>
+      <ng-template #elseTemplate>
+        <p>Флаг выключен</p>
+      </ng-template>
+      
+    </div>
+  </div>
+</div>
+<hr /> -->
+
+<!-- циклы  -->
+<!-- 
+<div class="container mb-3">
+  <div class="row">
+    <div class="col-3" *ngFor="
+    let item of someArray; 
+    let item_index = index;
+    let item_first = first;
+    let item_last = last">
+        {{item_index +1}} : {{item}}
+    </div>
+  </div>
+</div>
+<hr /> --> 
+<!-- динамические стили и css классы в шаблонах  -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p [style.font-size]="fontSize + 'px'"> Какой-то текст </p>
+      <p 
+      [ngStyle]="{'font-size': fontSize + 'px'}" 
+      [ngClass] = "{'color-green': buttonEnabled}"
+      >Еще какой-то текст</p>
+    </div>
+  </div>
+</div> -->
+
+<app-det></app-det>

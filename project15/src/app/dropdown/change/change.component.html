@@ -1,0 +1,55 @@
+<form>
+    <div class="row">
+        <div class="col" >
+            <div ngbDropdown class="btn-group dropright" placement="right-top" >
+                <button class="btn btn-outline-danger btn-sm" id="dropdownForm1" ngbDropdownToggle>
+                    Change
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownForm1" >
+                    <form class="px-4 py-3" [formGroup]="formChanger" [style.width]="'200px'">
+                        <div class="alert alert-success" role="alert"
+                            *ngIf="(formChanger.get('name').valid &&
+                             (formChanger.get('surname').valid) &&
+                            (formChanger.get('number').valid))">
+                            <strong>Valid!</strong>
+                        </div>
+                        <div class="alert alert-danger" role="alert"
+                            *ngIf="((formChanger.get('name').invalid) || 
+                            (formChanger.get('surname').invalid) || 
+                            (formChanger.get('number').invalid))">
+                            <strong> Invalid!</strong>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="DropdownName">Name</label>
+                            <input type="text" class="form-control" id="DropdownName" formControlName="name"
+                                placeholder="Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="DropdownSurname">Surname</label>
+                            <input type="text" class="form-control" id="DropdownSurname" formControlName="surname"
+                                placeholder="Surname" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="DropdownNumber">Number</label>
+                            <input [textMask]="{mask: mask}" class="form-control" id="DropdownNumber" formControlName="number"
+                                placeholder="Number" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="DropdownType">Type</label>
+                            <select class="custom-select" id="DropdownType" formControlName="type">
+                                <option [ngValue]="myWorkerType.programmer">Программист</option>
+                                <option [ngValue]="myWorkerType.designer">Дизайнер</option>
+                                <option [ngValue]="myWorkerType.copywriter">Рекламщик</option>
+                                <option [ngValue]="myWorkerType.manager">Менеджер</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" (click)="change_worker()"
+                            [hidden]="formChanger.invalid">Apply</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
